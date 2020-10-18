@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">Pink Floyd</a>
+		<button class="navbar-toggler" type="button"
+    (click)="dropDown()"
+    >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="collapse navbar-collapse" id="drop">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Artist</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Albums</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Hall Of Fames</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="slideShow">
+		<div class="Headerimg">
+			<img [src]="url">
+    </div>
+		</div>
+		<br>
+		<div class="grid-container">
+			<div class="texts">
+				<h3>
+					The Pink Floyd
+				</h3>
+				<hr>
+				Pink Floyd were an English rock band formed in London in 1965. Gaining a following as a psychedelic pop
+				group, they were distinguished for their extended compositions, sonic experimentation, philosophical
+				lyrics
+				and elaborate live shows
+				and ambient music.
+			</div>
+		</div>
+		<h4 class="texts">
+			Gallery
+		</h4>
+		<div class="grid-template-columns">
+			<div class="grid-item">
+				<img [src]="url1" id="myImg">
+				<div style="font-size: 22px;">
+					Dark Side of the moon album
+				</div>
+			</div>
+			<div class="grid-item">
+				<img [src]="url1" id="myImg">
+				<div style="font-size: 22px;">
+					the album
+				</div>
+			</div>
+			<div class="grid-item">
+				<img [src]="url1" id="myImg">
+				<div style="font-size: 22px;">
+					the album
+				</div>
+			</div>
+			<div class="grid-item">
+				<img [src]="url1" id="myImg">
+				<div style="font-size: 22px;">
+					the album
+				</div>
+			</div>
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+		</div>
+</body>
